@@ -9,6 +9,10 @@
   <script src="jquery.basecolor.js"></script>
 </head>
 <body>
+
+<a href="https://github.com/bryanstedman/jqueryBaseColor"><img style="position: absolute; top: 0; right: 0; border: 0; margin: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+
   <div class="container">
     <h1>Base Color Demo</h1>
     <p>Base Color is a jQuery plugin that finds a base background color of an image.</p>
@@ -41,7 +45,7 @@
 
 
   <script>
-    $('img').on('click', function() {
+    $('.container img').on('click', function() {
       $('img').removeClass();
       $(this).addClass('active');
 
