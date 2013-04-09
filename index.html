@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BaseColor Demo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="jquery-1.8.3.min.js"></script>
+  <script src="quantize.js"></script>
+  <script src="jquery.basecolor.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Base Color Demo</h1>
+    <p>Base Color is a jQuery plugin that finds a base background color of an image.</p>
+    <img src="img/1.jpg" width="75" height="75" alt="">
+    <img src="img/2.jpg" width="75" height="75" alt="">
+    <img src="img/3.jpg" width="75" height="75" alt="">
+    <img src="img/4.jpg" width="75" height="75" alt="">
+    <img src="img/5.jpg" width="75" height="75" alt="">
+    <img src="img/6.jpg" width="75" height="75" alt="">
+    <img src="img/7.jpg" width="75" height="75" alt="">
+    <img src="img/8.jpg" width="75" height="75" alt="">
+    <img src="img/9.jpg" width="75" height="75" alt="">
+    <img src="img/10.jpg" width="75" height="75" alt="">
+    <img src="img/11.jpg" width="75" height="75" alt="">
+    <img src="img/12.jpg" width="75" height="75" alt="">
+    <img src="img/13.jpg" width="75" height="75" alt="">
+    <img src="img/14.jpg" width="75" height="75" alt="">
+    <img src="img/15.jpg" width="75" height="75" alt="">
+    <img src="img/16.jpg" width="75" height="75" alt="">
+    <img src="img/17.jpg" width="75" height="75" alt="">
+    <img src="img/18.jpg" width="75" height="75" alt="">
+    <img src="img/19.jpg" width="75" height="75" alt="">
+    <img src="img/20.jpg" width="75" height="75" alt="">
+    <img src="img/21.jpg" width="75" height="75" alt="">
+    <img src="img/22.jpg" width="75" height="75" alt="">
+    <img src="img/23.jpg" width="75" height="75" alt="">
+    <img src="img/24.jpg" width="75" height="75" alt="">
+  </div>
+  <canvas id="demo-canvas"></canvas>
+
+
+  <script>
+    $('img').on('click', function() {
+      $('img').removeClass();
+      $(this).addClass('active');
+
+      var bgColor = $(this).baseColor({
+        hideCanvas: false, 
+        canvasID: 'demo-canvas',
+        canvasWidth: '100px',
+        canvasHeight: '100px'
+      });
+      $('html').css('background', ''+bgColor);
+
+    });
+  </script>
+</body>
+</html>

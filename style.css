@@ -1,0 +1,30 @@
+* {box-sizing: border-box;}
+
+.container {
+  background: #eee url(img/texture.png);
+  width: 575px;
+  height: auto;
+  margin: 100px auto 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #555555;
+}
+
+h1, p {
+  margin: 0;
+  text-shadow: 1px 1px 1px white;
+}
+
+p {margin-bottom: 10px;}
+
+img {cursor: pointer;margin:5px;}
+.active {box-shadow: 0 0 10px #2398d4;}
+
+canvas {
+  display: block;
+  margin:20px auto;
+/*  width: 200px;
+  height: 200px;*/
+}
+
+canvas img {border: 1px solid #333;}
