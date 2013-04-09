@@ -1,9 +1,9 @@
 /*! 
- * jQuery Plugin Plugin
+ * jQuery Base Color Plugin
  * Version: 0.1.0
  * URL: https://github.com/bryanstedman/jqueryBaseColor
  * Description: A jQuery plugin that paints an image to canvas and calulates a base color
- * Requires: JQUERY_VERSION, OTHER_PLUGIN(S), ETC.
+ * Requires: jQuery & quantize.js
  * Author: Bryan Stedman, http://bryanstedman.com
  * Copyright: Copyright 2013 Bryan Stedman
  * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
