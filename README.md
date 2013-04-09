@@ -8,7 +8,7 @@ Basic usage is a simple as passing jquery an image and then calling baseColor() 
 `$(img).baseColor();`
 
 ### Options
-You can pass several options to baseColor. The defaults are:
+You can pass several options to baseColor. The defaults are:    
 canvasID: 'baseColorCanvas',  
 hideCanvas: true,  
 canvasWidth: '200px',  
