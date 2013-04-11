@@ -70,7 +70,7 @@
   $.fn.baseColor = function(options) {
     var canvas, newCanvas, image;
     this.options = $.extend({}, defaults, options);
-    if ($('#'+this.options.canvasID).length == 0) {
+    if ($('#'+this.options.canvasID).length === 0) {
       newCanvas = $('<canvas/>',{'id': this.options.canvasID}).width(200).height(200);
       $('body').append(newCanvas);
     }
