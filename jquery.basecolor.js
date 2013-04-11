@@ -85,7 +85,9 @@
     image = new Image();
     image.src = $(this).attr('src');
 
-    return findColor(image, canvas);
+    image.onload = function() {
+      return findColor(image, canvas);
+    }
 
   };
 
