@@ -87,7 +87,7 @@
 
     image.onload = function() {
       return findColor(image, canvas);
-    }
+    };
 
   };
 
