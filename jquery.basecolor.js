@@ -9,7 +9,7 @@
  * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
  */
 
-;(function($, document, window, undefined) {
+(function($, document, window, undefined) {
   "use strict";
 
   // Default options for the plugin as a simple object
