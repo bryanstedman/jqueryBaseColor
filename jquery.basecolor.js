@@ -9,7 +9,7 @@
  * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
  */
 
-;(function($, document, window, undefined) {
+(function($, document, window, undefined) {
   "use strict";
 
   // Default options for the plugin as a simple object
@@ -70,7 +70,7 @@
   $.fn.baseColor = function(options) {
     var canvas, newCanvas, image;
     this.options = $.extend({}, defaults, options);
-    if ($('#'+this.options.canvasID).length == 0) {
+    if ($('#'+this.options.canvasID).length === 0) {
       newCanvas = $('<canvas/>',{'id': this.options.canvasID}).width(200).height(200);
       $('body').append(newCanvas);
     }
@@ -85,7 +85,9 @@
     image = new Image();
     image.src = $(this).attr('src');
 
-    return findColor(image, canvas);
+    image.onload = function() {
+      return findColor(image, canvas);
+    };
 
   };
 
